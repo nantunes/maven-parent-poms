@@ -93,7 +93,7 @@
     <license-helper-maven-plugin.version>1.27</license-helper-maven-plugin.version>
     <maven-war-plugin.version>3.2.0</maven-war-plugin.version>
     <maven-bundle-plugin.version>2.5.3</maven-bundle-plugin.version>
-    <karaf-maven-plugin.version>3.0.8</karaf-maven-plugin.version>
+    <karaf-maven-plugin.version>4.2.2</karaf-maven-plugin.version>
 
     <nodejs.version>v10.0.0</nodejs.version>
     <npm.version>5.7.1</npm.version>
@@ -393,6 +393,10 @@
           <groupId>org.apache.karaf.tooling</groupId>
           <artifactId>karaf-maven-plugin</artifactId>
           <version>${karaf-maven-plugin.version}</version>
+          <extensions>true</extensions>
+          <configuration>
+            <enableGeneration>true</enableGeneration>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
